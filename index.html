@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,51 +34,61 @@
   <body>
     <header>
       <img src="./images/logo.svg" alt="logo" />
-      <div>
-        <a href="#" id="features" class="links">Features</a>
-        <div class="dropdown-content-features">
-          <img src="./images/icon-todo.svg" alt="icon todo" />
-          <p>Todo List</p>
 
-          <img src="./images/icon-calendar.svg" alt="icon calendar" />
-          <p>Calendar</p>
-
-          <img src="./images/icon-reminders.svg" alt="icon reminders" />
-          <p>Reminders</p>
-
-          <img src="./images/icon-planning.svg" alt="icon planning" />
-          <p>Planning</p>
+      <div class="header-content">
+        <div class="dropdown-header">
+          <p id="features" class="links">Features</p>
+          <img src="./images/icon-arrow-down.svg" alt="image arrow up">
+          <div class="dropdown-content-features">
+            <img src="./images/icon-todo.svg" alt="icon todo" />
+            <p>Todo List</p>
+            <img src="./images/icon-calendar.svg" alt="icon calendar" />
+            <p>Calendar</p>
+            <img src="./images/icon-reminders.svg" alt="icon reminders" />
+            <p>Reminders</p>
+            <img src="./images/icon-planning.svg" alt="icon planning" />
+            <p>Planning</p>
+          </div>
+          <p id="company" class="links">Company</p>
+          <img src="./images/icon-arrow-down.svg" alt="image arrow up">
+          <div class="dropdown-content-company">
+            <p>History</p>
+            <p>Our Team</p>
+            <p>Blog</p>
+          </div>
+          <p class="links">Careers</p>
+          <p class="links">About</p>
+        </div>
+        <div class="login">
+          <p class="signup">Login</p>
+          <p id="register" class="signup">Register</p>
         </div>
       </div>
-      <div>
-        <a href="#" id="company" class="links">Company</a>
-        <div class="dropdown-content-company">
-          <p>History</p>
-          <p>Our Team</p>
-          <p>Blog</p>
-        </div>
-      </div>
-      <a href="#" class="links">Careers</a>
-      <a href="#" class="links">About</a>
-
-      <a href="#" class="links">Login</a>
-      <a href="#" class="links">Register</a>
     </header>
-    <img src="./images/image-hero-mobile.jpg" alt="image" />
-    <div class="content">
-      <h1>Make remote work</h1>
-      <p>
-        Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.
-      </p>
-      <p>Learn more</p>
-    </div>
+
+    <main>
+      <img src="./images/image-hero-desktop.png" alt="image" />
+      <div class="content">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>Learn more</button>
+        <div class="logos">
+          <img src="./images/client-databiz.svg" alt="databiz" />
+          <img src="./images/client-audiophile.svg" alt="audiophile" />
+          <img src="./images/client-meet.svg" alt="meet">
+          <img src="./images/client-maker.svg" alt="maker">
+        </div>
+      </div>
+    </main>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Matheus Toscano</a>.
     </div>
   </body>
 </html>

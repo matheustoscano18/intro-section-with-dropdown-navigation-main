@@ -1,0 +1,157 @@
+:root {
+  --almostwhite: hsl(0, 0%, 98%);
+  --mediumgray: hsl(0, 0%, 41%);
+  --almostblack: hsl(0, 0%, 8%);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  padding: 0 30px;
+  width: 99vw;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px 0px 50px;
+}
+
+.links {
+  color: var(--mediumgray);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 20px 0px 20px 30px;
+}
+
+.links:hover {
+  cursor: pointer;
+  color: var(--almostblack);
+}
+
+.dropdown-header {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.dropdown-header img {
+  height: 6px;
+  padding-left: 5px;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+.login p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.signup {
+  margin-right: 10px;
+  color: var(--mediumgray);
+}
+
+.signup:hover {
+  cursor: pointer;
+  color: var(--almostblack);
+}
+
+#register {
+  border: 2px solid var(--mediumgray);
+  border-radius: 12px;
+  text-align: center;
+  padding: 12px 15px;
+  margin-left: 10px;
+}
+
+#register:hover {
+  border: 2px solid var(--almostblack);
+}
+
+.dropdown-content-features, .dropdown-content-company {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+main img {
+  width: 600px;
+}
+
+.content {
+  width: 35vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.content h1 {
+  color: var(--almostblack);
+  font-size: 76px;
+  font-weight: 700;
+  margin-top: 150px;
+}
+
+.content p {
+  color: var(--mediumgray);
+  width: 30vw;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  margin: 50px 0;
+}
+
+button {
+  background-color: var(--almostblack);
+  color: var(--almostwhite);
+  border: none;
+  width: 150px;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 30px 0 0 0;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 170px;
+}
+
+.logos img {
+  width: 100px;
+}
