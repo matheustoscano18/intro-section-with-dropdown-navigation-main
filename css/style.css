@@ -23,7 +23,7 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: 50px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .header-content {
@@ -159,7 +159,7 @@ main {
 }
 
 main img {
-  width: 600px;
+  width: 560px;
 }
 
 .content {
@@ -183,7 +183,7 @@ main img {
   font-size: 18px;
   font-weight: 500;
   line-height: 25px;
-  margin: 50px 0;
+  padding: 50px 0;
 }
 
 button {
@@ -191,11 +191,18 @@ button {
   color: var(--almostwhite);
   border: none;
   width: 150px;
-  height: 55px;
+  min-height: 55px;
   border-radius: 10px;
   font-size: 17px;
   font-weight: 700;
-  margin: 30px 0 0 0;
+  transition: 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--almostwhite);
+  color: var(--almostblack);
+  border: 1px solid var(--almostblack);
 }
 
 .logos {
@@ -203,9 +210,128 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 170px;
+  margin-top: 160px;
 }
 
 .logos img {
-  width: 100px;
+  width: 90px;
+}
+
+@media (max-width: 1440px) {
+  main img {
+    width: 440px;
+  }
+  .content h1 {
+    font-size: 60px;
+  }
+  .content p {
+    width: 30vw;
+  }
+  .logos {
+    margin-top: 100px;
+    justify-content: space-around;
+  }
+  .logos img {
+    width: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    margin-top: 20px;
+  }
+  .header-content {
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    text-align: center;
+    background-color: var(--almostwhite);
+    display: none;
+  }
+  .dropdown-header {
+    flex-direction: column;
+  }
+  .dropdown-content-features {
+    flex-direction: column;
+  }
+  .login {
+    flex-direction: column;
+  }
+  main {
+    flex-direction: column;
+  }
+  main img {
+    width: 80vw;
+  }
+  .content {
+    width: 100vw;
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+  }
+  .content h1 {
+    font-size: 4em;
+    margin-top: 50px;
+  }
+  .content p {
+    width: 80vw;
+    font-size: 1.6em;
+    line-height: 30px;
+    padding: 20px 0;
+    margin: 40px 0;
+  }
+  button {
+    width: 300px;
+    min-height: 55px;
+    font-size: 1.6em;
+    margin: 50px 0;
+  }
+  .logos {
+    width: 80vw;
+    margin-top: 50px;
+    gap: 10px;
+  }
+  .logos img {
+    width: 130px;
+  }
+  .attribution {
+    padding: 40px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 425px) {
+  main img {
+    width: 100vw;
+  }
+  .content {
+    height: 50vh;
+  }
+  .content h1 {
+    font-size: 2.1em;
+  }
+  .content p {
+    width: 90vw;
+    margin: 15px 0;
+    font-size: 1em;
+    line-height: 25px;
+  }
+  button {
+    width: 160px;
+    min-height: 55px;
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  .logos {
+    width: 100vw;
+    margin: 50px 15px 0 15px;
+    justify-content: space-around;
+  }
+  .logos img {
+    width: 70px;
+  }
+  .attribution {
+    font-size: 0.7em;
+    padding: 20px;
+  }
 }
