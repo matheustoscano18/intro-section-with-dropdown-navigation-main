@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,12 +33,16 @@
   </head>
   <body>
     <header>
-      <img src="./images/logo.svg" alt="logo" />
-
+      <div class="nav-images">
+        <img id="logo" src="./images/logo.svg" alt="logo" />
+        <img id="menu"src="./images/icon-menu.svg" alt="menu">
+      </div>
       <div class="header-content">
         <div class="dropdown-header">
-          <p id="features" class="links">Features</p>
-          <img src="./images/icon-arrow-down.svg" alt="image arrow up">
+          <div class="arrow">
+            <p id="features" class="links">Features</p>
+            <img src="./images/icon-arrow-down.svg" alt="image arrow">
+          </div>
           <div id="dropdown-features" class="dropdown-content-features">
             <div class="cont-features">
               <img src="./images/icon-todo.svg" alt="icon todo" />
@@ -57,8 +61,10 @@
               <p>Planning</p>
             </div>
           </div>
-          <p id="company" class="links">Company</p>
-          <img src="./images/icon-arrow-down.svg" alt="image arrow up">
+          <div class="arrow">
+            <p id="company" class="links">Company</p>
+            <img src="./images/icon-arrow-down.svg" alt="image arrow">
+          </div>
           <div  id="dropdown-company" class="dropdown-content-company">
             <p>History</p>
             <p>Our Team</p>
@@ -75,7 +81,8 @@
     </header>
 
     <main>
-      <img src="./images/image-hero-desktop.png" alt="image" />
+      <img id="desktop-img" src="./images/image-hero-desktop.png" alt="image" />
+      <img id="mobile-img" src="./images/image-hero-mobile.png" alt="image">
       <div class="content">
         <h1>Make remote work</h1>
         <p>

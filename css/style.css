@@ -26,6 +26,10 @@ header {
   margin-top: 5px;
 }
 
+#menu {
+  display: none;
+}
+
 .header-content {
   width: 100%;
   display: flex;
@@ -56,6 +60,14 @@ header {
 .dropdown-header img {
   height: 6px;
   padding-left: 5px;
+}
+
+.arrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .login {
@@ -158,8 +170,12 @@ main {
   position: relative;
 }
 
-main img {
+#desktop-img {
   width: 560px;
+}
+
+#mobile-img {
+  display: none;
 }
 
 .content {
@@ -240,12 +256,36 @@ button:hover {
   header {
     margin-top: 20px;
   }
+
+  .nav-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+  }
+
+  #menu {
+    width: 30px;
+    display: block;
+    right: 0;
+  }
+
   .header-content {
+    display: flex;
     flex-direction: column;
-    justify-content: right;
-    align-items: flex-end;
+    align-items: center;
     text-align: center;
+    justify-content: start;
+    width: 60vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
     background-color: var(--almostwhite);
+    padding: 20px 0;
+    border-radius: 0;
+    z-index: 10;
+    transition: 0.3s;
     display: none;
   }
   .dropdown-header {
@@ -254,14 +294,32 @@ button:hover {
   .dropdown-content-features {
     flex-direction: column;
   }
+  .cont-features {
+    flex-direction: row;
+  }
+  .dropdown-content-company, .dropdown-content-features{
+    position: static;
+    margin-top: 10px;
+    width: auto;
+    box-shadow: none;
+  }
   .login {
     flex-direction: column;
+  }
+  .links, .login p {
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
   }
   main {
     flex-direction: column;
   }
-  main img {
-    width: 80vw;
+  #desktop-img {
+    display: none;
+  }
+  #mobile-img {
+    display: block;
+    width: 100vw;
   }
   .content {
     width: 100vw;
@@ -324,7 +382,7 @@ button:hover {
   }
   .logos {
     width: 100vw;
-    margin: 50px 15px 0 15px;
+    margin: 50px 20px 0 20px;
     justify-content: space-around;
   }
   .logos img {

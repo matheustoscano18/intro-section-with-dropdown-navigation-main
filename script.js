@@ -11,5 +11,17 @@ function toggleDropdown(dropdown) {
   }
 }
 
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  const headerContent = document.querySelector(".header-content");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+    headerContent.style.display = "none";
+  } else {
+    menu.style.display = "block";
+    headerContent.style.display = "flex";
+  }
+}
+
 featuresButton.addEventListener("click", () => toggleDropdown(dropdownFeatures));
 companyButton.addEventListener("click", () => toggleDropdown(dropdownCompany));
