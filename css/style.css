@@ -26,7 +26,7 @@ header {
   margin-top: 5px;
 }
 
-#menu {
+.menu-icon {
   display: none;
 }
 
@@ -259,15 +259,19 @@ button:hover {
 
   .nav-images {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
     width: 100vw;
   }
 
-  #menu {
-    width: 30px;
+  .menu-icon {
     display: block;
-    right: 0;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 
   .header-content {
@@ -285,11 +289,18 @@ button:hover {
     padding: 20px 0;
     border-radius: 0;
     z-index: 10;
-    transition: 0.3s;
     display: none;
   }
+  .header-content.show {
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
   .dropdown-header {
+    margin-top: 50px;
     flex-direction: column;
+    text-align: left;
+    align-items: start;
+    padding-left: 30px;
   }
   .dropdown-content-features {
     flex-direction: column;
@@ -309,7 +320,6 @@ button:hover {
   .links, .login p {
     padding: 15px 0;
     width: 100%;
-    text-align: center;
   }
   main {
     flex-direction: column;
