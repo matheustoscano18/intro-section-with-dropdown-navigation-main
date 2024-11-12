@@ -38,16 +38,16 @@ header {
   position: relative;
 }
 
+.header-content p:hover {
+  cursor: pointer;
+  color: var(--almostblack);
+}
+
 .links {
   color: var(--mediumgray);
   font-weight: 500;
   font-size: 14px;
   padding: 20px 0px 20px 40px;
-}
-
-.links:hover {
-  cursor: pointer;
-  color: var(--almostblack);
 }
 
 .dropdown-header {
@@ -70,6 +70,11 @@ header {
   text-align: center;
 }
 
+.arrow:hover {
+  cursor: pointer;
+  color: var(--almostblack);
+}
+
 .login {
   display: flex;
   flex-direction: row;
@@ -85,11 +90,6 @@ header {
 .signup {
   margin-right: 10px;
   color: var(--mediumgray);
-}
-
-.signup:hover {
-  cursor: pointer;
-  color: var(--almostblack);
 }
 
 #register {
@@ -136,6 +136,7 @@ header {
   background-color: white;
   border-radius: 10px;
   box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1;
   display: none;
 }
 
